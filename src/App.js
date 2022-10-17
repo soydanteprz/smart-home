@@ -1,16 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from './components/NavBar';
-import { Home } from './components/Home';
+import  NavBar from './components/NavBar';
+import  Home  from './components/Home';
+import  Room  from './components/Room';
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <Router>
       <NavBar />
-      <Home />
-    </div>
+      <Routes>
+        <Route path="/" element ={<Home />} />
+        <Route path="/room" element={<Room />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

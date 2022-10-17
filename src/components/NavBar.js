@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-export const NavBar = () => {
+export default function NavBar() {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -12,20 +12,20 @@ export const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                        <Nav.Link href="#link">Link Divice</Nav.Link>
+                        <NavDropdown title="" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">
-                                Action
+                                Dante David Pérez Pérez
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
-                                Another action
+                                Daniel Felipe Hurtado Giraldo
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">
-                                Something
+                                Tec de Monterrey
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                                Pagina perrona
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
@@ -33,6 +33,4 @@ export const NavBar = () => {
             </Container>
         </Navbar>
     );
-}
-
-export default NavBar;
+};
