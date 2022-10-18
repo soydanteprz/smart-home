@@ -1,6 +1,3 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Stack from "react-bootstrap/Stack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,7 +17,7 @@ export default function Home() {
         <Stack direction="vertical" gap={5} className="text-center">
             <div className="bg-light border">
                 <NavLink
-                    to="/room"
+                    to="/bedroom"
                     className={({ isActive }) => (isActive ? "active" : "")}
                 >
                     <FontAwesomeIcon icon={faBed} size="2xl" />
