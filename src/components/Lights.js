@@ -1,9 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Time from "./Time";
+import Background from "./Background";
+import "../App.css";
 
 export default function Lights() {
     return (
+        <div className="Lights">
+            <Background />
         <Box 
         mt={10}
         sx={{ flexGrow: 1 }}
@@ -18,5 +22,6 @@ export default function Lights() {
                 <Time/>
             </Box>
         </Box>
+        </div>
     );
 }
