@@ -1,11 +1,10 @@
 import React from "react";
-import { Container } from "@mui/material";
 import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Grid from '@mui/material/Grid'; // Grid version 1
+import Lights from "./Lights";
 
 
 const IOSSwitch = styled((props) => (
@@ -66,7 +65,14 @@ const IOSSwitch = styled((props) => (
 
 export default function Room() {
     return (
-        <Box sx={{ flexGrow: 1 }} alignItems={"center"} justifyContent={"center"} flexDirection={{ xs: "column", md: "row" }} display={"flex"} >
+        <Box>
+        <Box
+         
+        sx={{ flexGrow: 1 }}
+        alignItems={"center"}
+        justifyContent={"center"}
+        flexDirection={{ xs: "column", md: "row" }}
+        display={"flex"} >
             <Box width={{ xs: "35vh", md: "40vh" }}>
                 <h1>LUCES</h1>
             </Box>
@@ -88,5 +94,9 @@ export default function Room() {
             </FormGroup>
             </Box>
         </Box>
+        <Lights />
+        </Box>
+
+        
     );
 }
