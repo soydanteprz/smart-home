@@ -13,20 +13,20 @@ export default function NavBar() {
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/">Link Divice</Nav.Link>
-                        <NavDropdown title="" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">
+                        <NavDropdown title="Participantes" id="basic-nav-dropdown">
+                            <NavDropdown.ItemText>
                                 Dante David Pérez Pérez
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
+                            </NavDropdown.ItemText>
+                            <NavDropdown.ItemText>
                                 Daniel Felipe Hurtado Giraldo
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
+                            </NavDropdown.ItemText>
+                            <NavDropdown.ItemText>
                                 Tec de Monterrey
-                            </NavDropdown.Item>
+                            </NavDropdown.ItemText>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
+                            <NavDropdown.ItemText>
                                 Pagina perrona
-                            </NavDropdown.Item>
+                            </NavDropdown.ItemText>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
