@@ -21,7 +21,7 @@ export default function Time() {
                     renderInput={(params) => <TextField {...params} />}
                 />
                 <DesktopTimePicker
-                    label="Turn on"
+                    label="Turn off"
                     value={value}
                     onChange={(newValue) => {
                         setValue(newValue);
